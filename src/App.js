@@ -39,7 +39,7 @@ const App = () => {
     <React.Fragment>
       <GlobalStyle />
       <Site className="App">
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Navigation />
           <Content>
             <Switch>
